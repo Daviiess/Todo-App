@@ -42,7 +42,7 @@ border-radius: 5px;
     flex-direction: column;
 }
 .sidebar-input input , .sidebar-input textarea{
-    width: 100%;
+    width: auto;
     padding: 2rem 7rem;
     border-radius: 1.5rem;
     background-color: rgba(255, 255, 255, 0.2);
@@ -60,12 +60,13 @@ border-radius: 5px;
 .sidebar .btn{
     padding: 1rem 2rem;
     background-color: gold;
+    border-radius: 1.5rem;
 }
 .sidebar .btn:hover{
     background-color: #f0c14b;
     color: black;
     cursor: pointer;
-    border-radius: 3px;
+   
 }
 .sidebar .btn:focus{
     outline: none;
@@ -76,9 +77,10 @@ border-radius: 5px;
 }
  .sidebar .header h1{
      padding-bottom: 1rem;
+     color: gold;
  }
 .header h1 i{
-    color: gold;
+    color: #ffffff;
 }
 .main-content{
     display: flex;
@@ -91,6 +93,7 @@ border-radius: 5px;
 .main-content .header h1{
     text-align: left;
     padding-bottom: 1rem;
+    color: gold;
 }
 .clear-all-container {
   display: flex;
@@ -123,6 +126,11 @@ border-radius: 5px;
     border: 1px solid whitesmoke;
      transition: all 0.4s ease-in-out;
      margin-bottom: 1rem;
+    overflow: scroll;
+    max-width: 500px;
+
+
+
 }
 .card:hover{
     transform: translateY(-1px);
@@ -134,7 +142,7 @@ border-radius: 5px;
 .card h3{
     font-size: bold;
     font-size: 3rem;
-    padding-bottom: 2rem;
+    line-height: 1.5;
 }
 .card p{
     font-size: 1.7rem;
@@ -179,6 +187,14 @@ border-radius: 5px;
     display: flex;
     gap:1.5rem;
 }
+pre{
+    font-size: 1.7rem;
+    font-weight: 300;
+    color: #ffffff;
+    line-height: 1.5;
+    white-space: pre-wrap; /* Ensures that whitespace is preserved */
+    word-wrap: break-word; /* Allows long words to break onto the next line */
+}
 .card-btn .btn i{
     font-size: 2rem;
     color: black;
@@ -193,10 +209,12 @@ border-radius: 5px;
 @media(max-width:769px){
     .container{
         grid-template-columns: 1fr;
+     width: auto;
 
     }
     .sidebar{
         height: 50vh;
         border-radius: 5px;
+        
     }
 }

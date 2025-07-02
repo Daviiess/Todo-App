@@ -14,7 +14,7 @@ const clearBtn = document.querySelector('#clear-btn');
       return `
        <div class="card">
     <h3 class = "${isDone ? 'line-through' : ''}">${todo.title}</h3>
-    <p class = "${isDone ? 'line-through' : ''}">${todo.description}</p>
+    <pre class = "${isDone ? 'line-through' : ''}">${todo.description}</pre>
     <div class="status ${isDone ? 'status-checked' : 'status-pending'}">
         <button class="btn" onclick="addToggle(${index})"><i class="fa-solid ${isDone ? 'fa-check' : 'fa-clock'}"></i ></button>
         <span>${isDone ? 'Completed' : 'Pending'}</span>
