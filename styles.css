@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+box-sizing: border-box;
+padding: 0;
+font-family: 'Inter', sans-serif;
+
+}
+:root{
+--primary-color: #928Dab;
+--secondary-color:#1f1c2c;
+}
+html{
+    font-size: 50%;
+}
+body{
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+}
+.container{
+    max-width: 1500px;
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 4rem;
+    padding: 5rem 10%;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   gap: 4rem;
+    height: calc(100vh - 4rem);
+    border: 3px solid var(--primary-color);
+backdrop-filter: blur(10px);
+padding: 2rem 2rem;
+border-radius: 5px;
+}
+.sidebar-input{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+.sidebar-input input , .sidebar-input textarea{
+    width: 100%;
+    padding: 2rem 7rem;
+    border-radius: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 0.4s ease-in-out;
+    color: #ffffff;
+}
+.sidebar-input input:focus, .sidebar-input textarea:focus{
+    outline: none;
+    border: 1px solid var(--primary-color);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.sidebar-input input::placeholder, .sidebar-input textarea::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+}
+.sidebar .btn{
+    padding: 1rem 2rem;
+    background-color: gold;
+}
+.sidebar .btn:hover{
+    background-color: #f0c14b;
+    color: black;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.sidebar .btn:focus{
+    outline: none;
+    border: 1px solid var(--primary-color);     
+}
+.header{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+}
+ .sidebar .header h1{
+     padding-bottom: 1rem;
+ }
+.header h1 i{
+    color: gold;
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: rgba(255, 255, 255, 0.2);
+   border-radius: 16px;
+   padding: 4rem 2rem;
+}
+.main-content .header h1{
+    text-align: left;
+    padding-bottom: 1rem;
+}
+.clear-all-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
+}
+
+.clear-all-btn {
+  background-color: crimson;
+  color: white;
+  border: none;
+  padding: 1.2rem 2.5rem;
+  font-size: 1.5rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.clear-all-btn:hover {
+  background-color: rgb(220, 20, 60);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+   background-color: var(--secondary-color); 
+    padding: 5rem;
+    gap: 2rem;
+    border-radius: 16px;
+    border: 1px solid whitesmoke;
+     transition: all 0.4s ease-in-out;
+     margin-bottom: 1rem;
+}
+.card:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+   cursor: pointer;
+}
+.card h3{
+    font-size: bold;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+.card p{
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+.card-btn .btn{
+ padding: 1rem 2rem;
+ color: black;
+ border-radius: 5px;
+ background-color: gold;
+ border: none;
+ outline: none;
+}
+.card-btn .btn:hover{
+    background-color: #f0c14b;
+    cursor: pointer;
+}
+.card-btn{
+    display: flex;
+    gap:1.5rem;
+}
+.status .btn{
+    padding: .5rem .8rem;
+    color: black;
+    border-radius: 5px;
+    background-color: gold;
+    border: none;
+    outline: none;
+}
+
+
+
+ .status .btn:hover{
+    background-color: #f0c14b;
+    cursor: pointer;
+}
+.card-btn .btn:hover{
+    background-color: #f0c14b;
+    cursor: pointer;
+}
+.card-btn{
+    display: flex;
+    gap:1.5rem;
+}
+.card-btn .btn i{
+    font-size: 2rem;
+    color: black;
+}
+.line-through{
+    text-decoration: line-through;
+     text-decoration-color: white;
+     text-decoration-thickness: 2px;
+     color: white;
+     opacity: 0.7;
+}
+@media(max-width:769px){
+    .container{
+        grid-template-columns: 1fr;
+
+    }
+    .sidebar{
+        height: 50vh;
+        border-radius: 5px;
+    }
+}
