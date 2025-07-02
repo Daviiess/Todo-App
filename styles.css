@@ -11,6 +11,7 @@ font-family: 'Inter', sans-serif;
 }
 html{
     font-size: 50%;
+    scroll-behavior: smooth;
 }
 body{
     background-color: var(--secondary-color);
@@ -24,6 +25,9 @@ body{
     grid-template-columns: 350px 1fr;
     gap: 4rem;
     padding: 5rem 10%;
+    
+    margin: 0 auto;
+    height: 100vh;
 }
 .sidebar{
     display: flex;

@@ -6,7 +6,7 @@ A responsive To-Do list web app that lets you create, edit, delete, and manage y
 [Click here to view the live app](https://daviiess.github.io/Todo-App/)
 
  📸 Screenshot
-![To-Do App Screenshot](Screenshot%202025-07-02%20at%2012.28.47.png)
+![To-Do App Screenshot](Screenshot%202025-07-02%20at%2014.20.43.png)
 
 🔧 Features
 - Add task title and description
