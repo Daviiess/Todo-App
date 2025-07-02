@@ -210,15 +210,17 @@ pre{
      color: white;
      opacity: 0.7;
 }
-@media(max-width:769px){
+@media(max-width:768px){
     .container{
         grid-template-columns: 1fr;
      width: auto;
-
+     padding: 2rem 5%;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
     .sidebar{
         height: 50vh;
         border-radius: 5px;
+
         
     }
 }
